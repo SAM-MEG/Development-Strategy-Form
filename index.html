@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development Strategy Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6E44FF, #B892FF, #FFC2E2);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin-top: 50px;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            color: #6E44FF;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        label {
+            font-weight: 600;
+            color: #444;
+            margin-top: 15px;
+        }
+
+        input, textarea, select {
+            border-radius: 8px;
+            margin-top: 5px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            width: 100%;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #6E44FF;
+            outline: none;
+            box-shadow: 0 0 8px rgba(110, 68, 255, 0.3);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #6E44FF, #B892FF);
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            border-radius: 8px;
+            text-transform: uppercase;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #B892FF, #FFC2E2);
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-top: 30px;
+        }
+
+        .current-time {
+            font-size: 14px;
+            text-align: right;
+            color: #444;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Section Spacing */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #6E44FF;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .section label {
+            font-size: 14px;
+        }
+
+        .section textarea {
+            height: auto;
+            min-height: 80px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Intro Section -->
+        <div class="intro">
+            <h2>Website Development Strategy Meeting</h2>
+            <p><strong>Date:</strong> <span id="current-date"></span></p>
+            <p>Good day! <br> My name is Samantha-Megan Campher, and I am a marketing and website developer passionate about creating websites that not only look great but also support business goals. I am excited about the opportunities this project holds for us, and I look forward to working together to create something special that brings value to your business. I appreciate your time and trust, and I am here to help with everything you need to bring your vision to life. These questions will help us get a clearer understanding of your needs and expectations.</p>
+        </div>
+
+        <!-- Form -->
+        <form action="https://formspree.io/f/xvgkzkaq" method="POST">
+            <!-- General Business Questions -->
+            <div class="section">
+                <h3>General Business Questions</h3>
+                <label for="goal">1. What is the main goal of your website? (e.g. sales, customer loyalty, providing information, bookings)</label>
+                <textarea id="goal" name="goal" class="form-control" required></textarea>
+
+                <label for="audience">2. Who is your target audience? (e.g. age, location, interests)</label>
+                <textarea id="audience" name="audience" class="form-control" required></textarea>
+
+                <label for="existing-website">3. Do you already have an existing website, or are we starting from scratch?</label>
+                <textarea id="existing-website" name="existing_website" class="form-control" required></textarea>
+
+                <label for="problem">4. What problem do you want the website to solve for your customers?</label>
+                <textarea id="problem" name="problem" class="form-control" required></textarea>
+            </div>
+
+            <!-- Design and Style -->
+            <div class="section">
+                <h3>Design and Style</h3>
+                <label for="colors">5. Are there specific colors, styles, or themes you want the website to reflect?</label>
+                <textarea id="colors" name="colors" class="form-control"></textarea>
+
+                <label for="logo">6. Do you already have a logo or branding that we should use?</label>
+                <textarea id="logo" name="logo" class="form-control"></textarea>
+
+                <label for="inspiration">7. Are there any websites that you like and would want to use as inspiration? If so, what do you like about them?</label>
+                <textarea id="inspiration" name="inspiration" class="form-control"></textarea>
+            </div>
+
+            <!-- Functionality -->
+            <div class="section">
+                <h3>Functionality</h3>
+                <label for="features">8. What specific features would you like the website to have? (e.g. online store, booking form, blog, contact form, customer feedback)</label>
+                <textarea id="features" name="features" class="form-control"></textarea>
+
+                <label for="software">9. Does the website need to be compatible with any specific software or third-party integrations? (e.g. email marketing, payment processing)</label>
+                <textarea id="software" name="software" class="form-control"></textarea>
+
+                <label for="languages">10. Would you like the website to support multiple languages? If yes, which languages?</label>
+                <textarea id="languages" name="languages" class="form-control"></textarea>
+            </div>
+
+            <!-- Content -->
+            <div class="section">
+                <h3>Content</h3>
+                <label for="content">11. Will you provide the content (e.g. text and images), or would you like help with content creation?</label>
+                <textarea id="content" name="content" class="form-control"></textarea>
+
+                <label for="pages">12. Do you have an idea of how many pages the website should have? (e.g. home page, about us, services, blog, contact)</label>
+                <textarea id="pages" name="pages" class="form-control"></textarea>
+
+                <label for="values">13. Are there any specific messages or core values you want the website to communicate?</label>
+                <textarea id="values" name="values" class="form-control"></textarea>
+            </div>
+
+            <!-- Timeline and Budget -->
+            <div class="section">
+                <h3>Timeline and Budget</h3>
+                <label for="deadline">14. Do you have a specific deadline for when the website should be completed?</label>
+                <textarea id="deadline" name="deadline" class="form-control"></textarea>
+
+                <label for="budget">15. What is your estimated budget for this project?</label>
+                <textarea id="budget" name="budget" class="form-control"></textarea>
+            </div>
+
+            <!-- Post-Launch Support -->
+            <div class="section">
+                <h3>Post-Launch Support</h3>
+                <label for="support">16. Would you like me to maintain the website after it’s completed?</label>
+                <textarea id="support" name="support" class="form-control"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+
+        <p class="footer">Thank you for taking the time to fill out this form. We will get in touch soon!</p>
+    </div>
+
+    <!-- Bootstrap JS (Optional for additional functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS for Date/Time Display -->
+    <script>
+        function updateDate() {
+            const now = new Date();
+            const date = now.toLocaleDateString();
+            document.getElementById('current-date').innerHTML = date;
+        }
+        updateDate();
+    </script>
+
+</body>
+</html>
+
